@@ -1,0 +1,74 @@
+{
+    "fart": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:fart",
+            "derpcats:fart1"
+        ]
+    },
+    "hit": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:hit",
+            "derpcats:hit1"
+        ]
+    },
+    "grump": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:grump"
+        ]
+    },
+    "grumphit": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:grumphit"
+        ]
+    },
+    "grumpdeath": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:grumpdeath"
+        ]
+    },
+    "death": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:death"
+        ]
+    },
+	"growl": {
+        "replace": false,
+        "category": "hostile",
+        "sounds": [
+            "derpcats:growl"
+        ]
+    },
+	"alert": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:alert"
+        ]
+    },
+    "shutdown": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:shutdown"
+        ]
+    },
+    "grumphitlong": {
+        "replace": false,
+        "category": "neutral",
+        "sounds": [
+            "derpcats:grumphitlong"
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+
+{
+  "parent": "derpcats:item/cathotdog",
+  "textures": {
+    "layer0": "derpcats:items/cathotdogm"
+  }
+}

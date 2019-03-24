@@ -1,0 +1,22 @@
+{
+    "_comment": [
+		"Turn your Catnip into a compressed block."
+	],
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"CCC",
+		"CCC",
+		"CCC"
+	],
+	"key": {
+		"C": {
+			"item": "derpcats:catnip",
+			"data": 0
+		}
+	},
+	"result": {
+	    "item": "derpcats:catnipblock",
+		"data": 0,
+		"count": 1
+	}
+}

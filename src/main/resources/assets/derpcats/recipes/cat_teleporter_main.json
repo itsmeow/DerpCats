@@ -1,0 +1,30 @@
+{
+    "_comment": [
+        "Create teleporter with cat robot circuits, one diamond, and two sticks"
+    ],
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        " CD",
+        " SC",
+        "S  "
+    ],
+    "key": {
+        "C": {
+            "item": "derpcats:catrobotcircuit",
+            "data": 0
+        },
+        "D": {
+            "item": "minecraft:diamond",
+            "data": 0
+        },
+        "S": {
+            "item": "minecraft:stick",
+            "data": 0
+        }
+    },
+    "result": {
+        "item": "derpcats:catteleporter",
+        "data": 0,
+        "count": 1
+    }
+}

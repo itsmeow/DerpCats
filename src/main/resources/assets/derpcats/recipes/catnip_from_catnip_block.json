@@ -1,0 +1,18 @@
+{
+    "_comment": [
+	    "Split your Catnip Block back into Catnip."
+	],
+	"type": "minecraft:crafting_shapeless",
+	"group": "derpcats:catnip",
+	"ingredients": [
+	    {
+	        "item": "derpcats:catnipblock",
+			"data": 0
+	    }
+	],
+	"result": {
+	    "item": "derpcats:catnip",
+		"data": 0,
+		"count": 9
+	}
+}

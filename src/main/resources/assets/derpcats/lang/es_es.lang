@@ -1,0 +1,31 @@
+﻿#Entities
+#entity.landfishcat.name=
+entity.explodingcat.name=Gato Explosivo
+entity.grumpycat.name=Gato Gruñón
+entity.fartcat.name=Gato Pedo
+entity.companioncat.name=Gato Compañero
+entity.meancat.name=Gato Villano
+entity.robotcat.name=Gato Robot
+entity.spacecat.name=Gato Espacio
+entity.giantcat.name=Gato Gigante
+entity.spidercat.name=Gato Araña
+entity.hotdogcat.name=Gato Perro Caliente
+entity.catlady.name=Viejo Señora del Gato
+entity.hopcat.name=Gato Saltando
+entity.chefcat.name=Gato Cocinero
+entity.giraffecat.name=Gato Jirafa
+entity.crazycat.name=Gato Loco
+#Blocks
+#tile.catportalblock.name=Portal a la Tierra del Gato
+tile.catnipblock.name=Bloque de Hierba Gatera
+tile.catdirtblock.name=Suciedad Gato
+#Items
+item.catnip.name=Hierba Gatera
+item.catmeatraw.name=Sin Cocer Carne del Gato
+item.catmeatcooked.name=Cocido Carne del Gato
+item.catrobotcircuit.name=Placa de circuitos electrónicos
+item.cathotdog.name=Perro Caliente
+item.cathotdogm.name=Perro Caliente con la Mostaza
+item.catteleporter.name=Teletransportador al Tierra del Gato
+#Creative Tabs
+itemGroup.DerpCats=DerpCats

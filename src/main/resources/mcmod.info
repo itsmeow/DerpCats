@@ -1,0 +1,14 @@
+[
+{
+  "modid": "derpcats",
+  "name": "DerpCats",
+  "description": "This mod is an addition of funny and random cats to Minecraft! I hope you enjoy it.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "http://itsmeow.net16.net",
+  "updateUrl": "https://minecraft.curseforge.com/projects/derpcats",
+  "authorList": ["its_meow"],
+  "credits": "its_meow, for programming, ideas, design, animation, modeling, texturing, and leading(formerly known as hiotewdew) PandaPlayzKung (kungfu67, PandaPlayz are previous names), for some sounds initially including farts and all sounds used by grumpy cat.",
+  "logoFile": "derpcats.png"
+}
+]

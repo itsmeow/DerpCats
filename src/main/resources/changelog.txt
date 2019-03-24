@@ -1,0 +1,110 @@
+-
+v1.9.2
+    -Fixed bug where cats that explode would cause glitch blocks that make the player get stuck
+    -Redid cat model internally
+    -Added sitting on companion cat
+    -Cleaned up code
+
+-
+v1.9.1
+    -Fixed Crazy Cat crash on servers
+
+-
+v1.9
+    -Removed portal from beta and replaced with handheld teleporter.
+    -Fixed bug where sound did not work on servers.
+    -Added chef cat. He cooks!
+    -Added giraffe cat.
+    -Added crazy cat.
+    -Updated to new forge version
+
+-
+v1.8
+    -Re added ability to disable cat meat in configuration
+    -Added cat dimension beta with barely functional portal
+    -Hop Cat has its own texture now
+    -Updated mcmod.info image to new DerpCats logo.
+    -Changed name in mcmod.info to "DerpCats" from "Derp Cats Mod"
+    -Spanish Translation updates
+    -Redid version checker JSON so it will notify across all 1.12 versions
+    -Sound is still broken on servers and I'm angry because I tried and it didn't work and I just wanna get this dimension beta out
+    
+-
+v1.7
+    -Added some biomes to cat spawn lists
+    -Added Spanish Localization! (¡Traducción añadida al español!)
+    -Fixed bug where Hop Cat rendered as a white box
+
+-
+v1.6
+    -Fixed bug where servers didn't work.
+    -Updated to 1.12.1
+
+-
+v1.5.2
+    -Overhaul on recipe system
+    -Made isCatMeatOn in config obsolete, this is due to overhaul in item registration system, this isn't something I can fix.
+    -Overhaul on item registration system
+    -Updated to newer version of Forge 1.12 to fix crashes.
+-
+v1.5.1
+    -Fixed crafting recipes
+    -Updated +1 build of Forge 1.12.
+
+-
+v1.5
+    -Updated to 1.12
+    -Broke crafting recipes
+
+-
+v1.4.1
+    -Made "config" GUI in mods menu work. (Please note: as of current, all options in config require restart of Minecraft).
+    -Fixed Mean Cat being a white box
+    
+-
+v1.4
+    -Made circuit actually useful by implementing it into the oreDictionary.
+    -Fixed grammatical issue on Spider Cat's egg.
+    -Added Hot Dog and Hot Dog w/ Mustard.
+    -Added Hot Dog Cat (drops hot dogs).
+    -More Internal Changes
+    -You can now disable and enable Cat Meat in the configuration if you're sensitive to that. Enabled by default.
+    -Added Old Cat Lady, she spawns a TON of randomized cats within a 6x6 block radius.
+    -Buffed exploding cat, 4 times the explosion power
+    -De-Buffed exploding cat, cat nukes aren't fun.
+    -Added Hop Cat. It hops m8. (Please note I was lazy and made no texture for it, it uses grumpy cat's).
+    -Added update checker, will not be effective for any reason whatsoever until 1.5 is released. Versions previous to 1.4 will not remind you of updates.
+    -Added logo to forge "mods" menu.
+
+-
+v1.3
+    -Added Cat Meat. Cooked and Raw, drops from (most) cats.
+    -Added Electronic Circuit Board, they drop from the Robot Cat.
+    -Overhaul on internal coding system, allows quicker creation of new cats.
+    -Added Giant Cat. Gigantic but peaceful. (Creative Only)
+    -Made egg colors unique to each cat.
+    -Adjusted item models to look nice when held.
+    -Fixed grammatical errors in the earlier changelog(Specifically, v1.1).
+    -Added Spider Cat, it's honestly kind of creepy...
+    -Made adjustments to the hitboxes on the cats.
+    -Fixed accepted versions of mod from 1.10+ to the proper 1.11+
+    -Changed Creative Tab name from Derpcats to DerpCats. (Internally, not ingame, this doesn't apply to you)
+    -Fixed attack range bug on Mean Cat and Companion Cat. The attack range is now normal.
+-
+v1.2
+    -Added Robot and Space Cat. Known for inhabiting the highest places in Minecraftia.
+    -Developer Finally discovered how particles work, they're really annoying.
+-
+v1.1.2
+    -Changed recipe for catnip block to filling the entire table with catnip
+    -Added crafting catnip blocks back into nine catnip
+    -Fixed Mean Cat spawn, now set as MONSTER instead of CREATURE(For people who know the entity registry, the EnumCreatureType was Creature instead of Monster)
+    -Reduced spawn chance for all cats by quite a bit
+    -Some little bits of code may have been left in, particles, robot cat bits, etc. I'm working on stuff and may have missed something.
+-
+v1.1:
+    -Added Mean Cat, and a sound for Mean Cat, the "growl/hiss"-Hostile Cat, doesn't like you. A lot. May eat you. Do not come within 20 blocks of. DANGER. They're known for inhabiting forests in groups of 1 to 3. - KNOWN BUG - ridicoulous attack range, I am struggling to find out how to fix(same on Companion Cat)
+    -Changed mod name in mod menu from being "Derp Cats mod" to "Derp Cats Mod"
+    -Cleaned up some code
+    -Fixed Grumpy Cat to have angry particles when hit
+    -Lowered fart volume

@@ -1,0 +1,18 @@
+{
+    "_comment": [
+	    "Make some Catnip with Wheat."
+	],
+	"type": "minecraft:crafting_shapeless",
+	"group": "derpcats:catnip",
+	"ingredients": [
+	    {
+	        "item": "minecraft:wheat",
+			"data": 0
+	    }
+	],
+	"result": {
+	    "item": "derpcats:catnip",
+		"data": 0,
+		"count": 1
+	}
+}
