@@ -12,7 +12,7 @@ public class ItemCatnip extends Item {
     public ItemCatnip() {
         this.setRegistryName("catnip");
         this.setCreativeTab(DerpCatsMod.tab_derpcats);
-        this.setUnlocalizedName("catnip");
+        this.setTranslationKey("catnip");
     }
 
     public static boolean isCatnip() {

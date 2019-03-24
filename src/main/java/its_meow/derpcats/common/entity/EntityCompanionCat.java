@@ -34,9 +34,6 @@ import net.minecraft.init.SoundEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.network.datasync.DataParameter;
-import net.minecraft.network.datasync.DataSerializers;
-import net.minecraft.network.datasync.EntityDataManager;
 import net.minecraft.util.DamageSource;
 import net.minecraft.util.EnumHand;
 import net.minecraft.util.ResourceLocation;
@@ -44,8 +41,6 @@ import net.minecraft.util.SoundEvent;
 import net.minecraft.world.World;
 
 public class EntityCompanionCat extends EntityTameable {
-    private static final DataParameter<Float> DATA_HEALTH_ID = EntityDataManager
-            .<Float>createKey(EntityCompanionCat.class, DataSerializers.FLOAT);
 
     public EntityCompanionCat(World worldIn) {
         super(worldIn);
@@ -58,7 +53,7 @@ public class EntityCompanionCat extends EntityTameable {
         this.tasks.addTask(1, new EntityAISwimming(this));
         this.aiSit = new EntityAISit(this);
         this.tasks.addTask(2, this.aiSit);
-        this.tasks.addTask(3, new EntityCompanionCat.AIAvoidEntity(this, EntityLlama.class, 24.0F, 1.5D, 1.5D));
+        this.tasks.addTask(3, new EntityCompanionCat.AIAvoidEntity<EntityLlama>(this, EntityLlama.class, 24.0F, 1.5D, 1.5D));
         this.tasks.addTask(4, new EntityAILeapAtTarget(this, 0.4F));
         this.tasks.addTask(5, new EntityAIAttackMelee(this, 1.0D, true));
         this.tasks.addTask(6, new EntityAIFollowOwner(this, 1.0D, 10.0F, 2.0F));

@@ -30,7 +30,7 @@ public class EntityMeanCat extends EntityMob {
         this.tasks.addTask(2, new EntityAIWanderAvoidWater(this, 0.23F));
         this.tasks.addTask(3, new EntityAIWatchClosest(this, net.minecraft.entity.player.EntityPlayer.class, 10F));
         this.tasks.addTask(4, new EntityAIAttackMelee(this, 0.3D, false));
-        this.targetTasks.addTask(1, new EntityAINearestAttackableTarget(this, EntityPlayer.class, false));
+        this.targetTasks.addTask(1, new EntityAINearestAttackableTarget<EntityPlayer>(this, EntityPlayer.class, false));
     }
 
     @Override

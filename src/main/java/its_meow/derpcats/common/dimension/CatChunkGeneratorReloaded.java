@@ -50,7 +50,6 @@ public class CatChunkGeneratorReloaded implements IChunkGenerator {
     private final WorldType terrainType;
     private final double[] heightMap;
     private final float[] biomeWeights;
-    private IBlockState oceanBlock = Blocks.WATER.getDefaultState();
     private double[] depthBuffer = new double[256];
     private MapGenBase caveGenerator = new MapGenCaves();
     private MapGenStronghold strongholdGenerator = new MapGenStronghold();
@@ -111,7 +110,6 @@ public class CatChunkGeneratorReloaded implements IChunkGenerator {
                 this.biomeWeights[i + 2 + (j + 2) * 5] = f;
             }
         }
-        this.oceanBlock = Blocks.WATER.getDefaultState();
         worldIn.setSeaLevel(63);
 
         net.minecraftforge.event.terraingen.InitNoiseGensEvent.ContextOverworld ctx = new net.minecraftforge.event.terraingen.InitNoiseGensEvent.ContextOverworld(

@@ -19,6 +19,8 @@ import its_meow.derpcats.common.entity.EntityMeanCat;
 import its_meow.derpcats.common.entity.EntityRobotCat;
 import its_meow.derpcats.common.entity.EntitySpaceCat;
 import its_meow.derpcats.common.entity.EntitySpiderCat;
+import net.minecraft.entity.Entity;
+import net.minecraft.entity.EntityLiving;
 import net.minecraft.entity.EnumCreatureType;
 import net.minecraft.init.Biomes;
 import net.minecraft.util.ResourceLocation;
@@ -82,30 +84,30 @@ public class EntityRegistrar {
 
     // #################################################################################
 
-    public static void regCre(Class EntityClass, String entityNameIn, int solidColorIn, int spotColorIn, int prob,
+    public static void regCre(Class<? extends EntityLiving> EntityClass, String entityNameIn, int solidColorIn, int spotColorIn, int prob,
             int min, int max, Biome... biomes) {
         register(EntityClass, entityNameIn, solidColorIn, spotColorIn);
         registerCreatureSpawn(EntityClass, prob, min, max, biomes);
     }
 
-    public static void regMob(Class EntityClass, String entityNameIn, int solidColorIn, int spotColorIn, int prob,
+    public static void regMob(Class<? extends EntityLiving> EntityClass, String entityNameIn, int solidColorIn, int spotColorIn, int prob,
             int min, int max, Biome... biomes) {
         register(EntityClass, entityNameIn, solidColorIn, spotColorIn);
         registerMobSpawn(EntityClass, prob, min, max, biomes);
     }
 
-    public static void register(Class EntityClass, String entityNameIn, int solidColorIn, int spotColorIn) {
+    public static void register(Class<? extends Entity> EntityClass, String entityNameIn, int solidColorIn, int spotColorIn) {
         ResourceLocation rl = new ResourceLocation(Ref.MOD_ID + ":" + entityNameIn + "loc");
         EntityRegistry.registerModEntity(rl, EntityClass,
                 entityNameIn, ++modEntities, DerpCatsMod.mod, 64, 1, true, solidColorIn, spotColorIn);
         entities.add(rl);
     }
 
-    public static void registerCreatureSpawn(Class EntityClass, int prob, int min, int max, Biome... biomes) {
+    public static void registerCreatureSpawn(Class<? extends EntityLiving> EntityClass, int prob, int min, int max, Biome... biomes) {
         EntityRegistry.addSpawn(EntityClass, prob, min, max, EnumCreatureType.CREATURE, biomes);
     }
 
-    public static void registerMobSpawn(Class EntityClass, int prob, int min, int max, Biome... biomes) {
+    public static void registerMobSpawn(Class<? extends EntityLiving> EntityClass, int prob, int min, int max, Biome... biomes) {
         EntityRegistry.addSpawn(EntityClass, prob, min, max, EnumCreatureType.MONSTER, biomes);
     }
 

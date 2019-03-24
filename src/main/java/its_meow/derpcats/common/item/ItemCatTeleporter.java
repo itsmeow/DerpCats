@@ -25,7 +25,7 @@ public class ItemCatTeleporter extends Item {
     public ItemCatTeleporter() {
         this.setRegistryName("catteleporter");
         this.setCreativeTab(DerpCatsMod.tab_derpcats);
-        this.setUnlocalizedName("catteleporter");
+        this.setTranslationKey("catteleporter");
         this.setMaxStackSize(1);
     }
 
@@ -40,13 +40,13 @@ public class ItemCatTeleporter extends Item {
                         && playerIn instanceof EntityPlayer && playerMP.dimension != DerpCatsConfig.dimId
                         && playerMP.dimension == 0) {
                     dim0Pos = playerIn.getPosition();
-                    playerMP.mcServer.getPlayerList().transferPlayerToDimension(playerMP, DerpCatsConfig.dimId,
+                    playerMP.server.getPlayerList().transferPlayerToDimension(playerMP, DerpCatsConfig.dimId,
                             new CatTeleporter(playerIn.getServer().getWorld(DerpCatsConfig.dimId), catlandPos));
                 } else if(playerIn.getRidingEntity() == null | false && playerIn.isBeingRidden() == false
                         && playerIn instanceof EntityPlayer && playerMP.dimension != 0
                         && playerMP.dimension == DerpCatsConfig.dimId) {
                     catlandPos = playerIn.getPosition();
-                    playerMP.mcServer.getPlayerList().transferPlayerToDimension(playerMP, 0,
+                    playerMP.server.getPlayerList().transferPlayerToDimension(playerMP, 0,
                             new CatTeleporter(playerIn.getServer().getWorld(0), dim0Pos));
                 }
             }

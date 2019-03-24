@@ -41,7 +41,7 @@ public class DerpCatsMod {
     public static CreativeTabs tab_derpcats = new CreativeTabs("DerpCats") {
 
         @Override
-        public ItemStack getTabIconItem() {
+        public ItemStack createIcon() {
             return new ItemStack(ModItems.catnip);
         }
 

@@ -16,7 +16,7 @@ public class BlockCatDirt extends Block {
         super(Material.GROUND);
         this.setRegistryName("catdirtblock");
         this.setCreativeTab(DerpCatsMod.tab_derpcats);
-        this.setUnlocalizedName("catdirtblock");
+        this.setTranslationKey("catdirtblock");
         this.setHardness(0.3F);
         this.setSoundType(SoundType.GROUND);
     }

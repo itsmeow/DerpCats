@@ -16,7 +16,7 @@ public class BlockCatnip extends Block {
         super(Material.GRASS);
         this.setRegistryName("catnipblock");
         this.setCreativeTab(DerpCatsMod.tab_derpcats);
-        this.setUnlocalizedName("catnipblock");
+        this.setTranslationKey("catnipblock");
         this.setHardness(0.5F);
         this.setSoundType(SoundType.PLANT);
     }
