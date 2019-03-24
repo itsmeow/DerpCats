@@ -31,7 +31,9 @@ public class EntityExplodingCat extends EntityCat {
     }
 
     public void explode() {
-        this.world.createExplosion(this, this.posX, this.posY, this.posZ, 1F, true);
+        if(world.getGameRules().getBoolean("mobGriefing")) {
+            this.world.createExplosion(this, this.posX, this.posY, this.posZ, 1F, true);
+        }
         this.setDead();
     }
 

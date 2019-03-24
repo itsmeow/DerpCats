@@ -40,7 +40,9 @@ public class EntityGrumpyCat extends EntityCat {
     @Override
     public void onDeath(DamageSource cause) {
         if(!this.world.isRemote) {
-            this.world.createExplosion(this, this.posX, this.posY, this.posZ, 3F, true);
+            if(world.getGameRules().getBoolean("mobGriefing")) {
+                this.world.createExplosion(this, this.posX, this.posY, this.posZ, 3F, true);
+            }
             EntityLightningBolt entitylightning = new EntityLightningBolt(this.world, this.posX, this.posY, this.posZ,
                     false);
             this.world.spawnEntity(entitylightning);
