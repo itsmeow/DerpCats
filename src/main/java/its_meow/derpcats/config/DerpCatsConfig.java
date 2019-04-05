@@ -7,8 +7,6 @@ import net.minecraftforge.common.config.Configuration;
 
 public class DerpCatsConfig {
 
-    private static final String cI = "items";
-
     public static int dimId = 5704;
 
     public static void readConfig() {

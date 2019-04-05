@@ -1,4 +1,10 @@
 -
+v1.9.3
+	- Added checks for mobGriefing gamerule before explosions
+	- Fully fixed desync bug on Exploding Cat explosions
+	- Refactored codebase, now 90% cleaner.
+
+-
 v1.9.2
     -Fixed bug where cats that explode would cause glitch blocks that make the player get stuck
     -Redid cat model internally
